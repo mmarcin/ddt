@@ -77,9 +77,17 @@ WSGI_APPLICATION = 'dto.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'sql_server.pyodbc',
+        'HOST': 'local.procurio.sk',
+        'PORT': '1433',
+        'NAME': 'dwp',
+        'USER': 'sa',
+        'PASSWORD': 'idkfa5577m!',
+
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
+    },
 }
 
 # Password validation
