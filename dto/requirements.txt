@@ -8,7 +8,7 @@ kiwisolver==1.1.0
 MarkupSafe==1.1.1
 matplotlib==3.0.3
 numpy==1.16.3
-pip==19.1.1
+pip==21.1
 pymongo==3.8.0
 pyodbc==4.0.26
 pyparsing==2.4.0
